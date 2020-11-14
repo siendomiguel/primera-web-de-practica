@@ -38,7 +38,7 @@ ul {
     width: 50px;
 }
 
-/* Navegacion izquuierda */
+/* Navegacion izquierda */
 .nav-main ul {
     display: flex;
 }
@@ -66,6 +66,7 @@ ul {
     right: 30px;
     z-index: 2;
     font-size: 1.5rem;
+    display: none;
 }
 
 /* Cuerpo */
@@ -291,5 +292,32 @@ hr {
     .footer-links .footer-container {
         grid-template-columns: repeat(2, 1fr);
     }
+
+    .menu-btn {
+        display: block;
+    }
 }
 
+@media (max-width : 500px) {
+    .news-cards {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .news-cards img {
+        height: 270px;
+    }
+
+    .cards-banner-one .content, .cards-banner-two .content {
+        width: 100%;
+        padding: 60px 20px;
+    }
+
+    .footer-links{
+        display: none;
+    }
+    
+    .footer-links .footer-container {
+        display: none;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
